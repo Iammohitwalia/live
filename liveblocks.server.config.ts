@@ -11,7 +11,7 @@ if (!SECRET_API_KEY) {
   throw new Error(`You must add your Liveblocks secret key to .env.local to use the starter kit 
 
 Example .env.local file:
-LIVEBLOCKS_SECRET_KEY=sk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+LIVEBLOCKS_SECRET_KEY=sk_dev_AQtRdlRFj4tdMI0XXl5qtq3GVRMd0mFr8vF9ZEDDeJTYTa9Ud2MtzBV0aVOqdNUr
 
 You can find your secret keys on https://liveblocks.io/dashboard/apikeys 
 Follow the full starter kit guide on https://liveblocks.io/docs/guides/nextjs-starter-kit
@@ -36,8 +36,8 @@ if (typeof window !== "undefined") {
       console.log(`Your GitHub secrets are missing from .env.local
       
 Example .env.local file:
-GITHUB_CLIENT_ID=sk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GITHUB_CLIENT_SECRET=sk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+GITHUB_CLIENT_ID=Iv1.dd41cf7cb9e7fc88
+GITHUB_CLIENT_SECRET=dc8437247043f05262b537d0ae81357bd9214bc6
       
 Follow the full starter kit guide to learn how to get them:
 https://liveblocks.io/docs/guides/nextjs-starter-kit#github-authentication
