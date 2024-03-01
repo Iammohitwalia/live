@@ -1,4 +1,3 @@
-import { Auth0Profile } from "next-auth/providers/auth0";
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { getUser } from "../../../lib/server";
@@ -72,7 +71,7 @@ export const authOptions = {
 
    
     // Use Auth0 authentication
-    // import Auth0Provider from "next-auth/providers/auth0";
+   import Auth0Provider from "next-auth/providers/auth0";
     Auth0Provider({
       clientId: process.env.AUTH0_CLIENT_ID as string,
       clientSecret: process.env.AUTH0_CLIENT_SECRET as string,
