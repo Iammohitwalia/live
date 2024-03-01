@@ -2,6 +2,8 @@ import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { getUser } from "../../../lib/server";
 import { User } from "../../../types";
+import { Auth0Provider } from '@next-auth/auth0';
+
 
 // Your NextAuth secret (generate a new one for production)
 // More info: https://next-auth.js.org/configuration/options#secret
@@ -71,7 +73,6 @@ export const authOptions = {
 
    
     // Use Auth0 authentication
-   import Auth0Provider from "next-auth/providers/auth0";
     Auth0Provider({
       clientId: process.env.AUTH0_CLIENT_ID as string,
       clientSecret: process.env.AUTH0_CLIENT_SECRET as string,
