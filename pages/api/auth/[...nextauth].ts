@@ -1,4 +1,3 @@
-import { Auth0Provider } from "next-auth/providers/auth0";
 import { Auth0Profile } from "next-auth/providers/auth0";
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
