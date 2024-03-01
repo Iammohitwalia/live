@@ -1,6 +1,6 @@
 import NextAuth from "next-auth";
+import Auth0Provider from "next-auth/providers/auth0"; // Import Auth0Provider before CredentialsProvider
 import CredentialsProvider from "next-auth/providers/credentials";
-import Auth0Provider from "next-auth/providers/auth0"; // Import Auth0Provider
 import { getUser } from "../../../lib/server";
 import { User } from "../../../types";
 
@@ -56,7 +56,6 @@ export const authOptions = {
     Auth0Provider({
       clientId: process.env.AUTH0_CLIENT_ID as string,
       clientSecret: process.env.AUTH0_CLIENT_SECRET as string,
-      // domain: process.env.AUTH0_DOMAIN as string, // Remove this line
     }),
 
     // Add more providers here if needed
