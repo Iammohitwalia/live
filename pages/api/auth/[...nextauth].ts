@@ -53,10 +53,10 @@ export const authOptions = {
       },
     }),
 
-    Auth0Provider({ // Configure Auth0Provider
+    Auth0Provider({
       clientId: process.env.AUTH0_CLIENT_ID as string,
       clientSecret: process.env.AUTH0_CLIENT_SECRET as string,
-      domain: process.env.AUTH0_DOMAIN as string,
+      // domain: process.env.AUTH0_DOMAIN as string, // Remove this line
     }),
 
     // Add more providers here if needed
@@ -64,6 +64,7 @@ export const authOptions = {
 };
 
 export default NextAuth(authOptions);
+
 
 
 // import NextAuth from "next-auth";
