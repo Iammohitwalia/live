@@ -9,14 +9,12 @@ import { User } from "../types";
  * Group info is in /data/groups.ts
  */
 export const users: Omit<User, "color">[] = [
-  /*
-  {
-    id: "[YOUR EMAIL ADDRESS]",
-    name: "[YOUR DISPLAY NAME]",
-    avatar: "https://liveblocks.io/avatars/avatar-0.png",
-    groupIds: ["product", "engineering", "design"],
-  },
-  */
+{
+  id: "mohitwalia5490@gmail.com",
+  name: "Mohit Walia",
+  avatar: "https://liveblocks.io/avatars/avatar-0.png",
+  groupIds: ["product", "engineering", "design"],
+},
   {
     id: "charlie.layne@example.com",
     name: "Charlie Layne",
